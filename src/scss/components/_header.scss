@@ -1,0 +1,98 @@
+.header {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0,
+      transparent 60%,
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../../../public/assets/netflixbg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  border-bottom: 8px solid $color--dark;
+  position: relative;
+
+  &__nav {
+    @include displayFex(center, space-between, row);
+    padding: 2rem;
+  }
+  &__logo {
+    height: 3.6rem;
+    width: 13.4rem;
+    fill: $color--primary;
+    line-height: normal;
+  }
+  &__signUp--link {
+    margin-left: auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.7rem 1.7rem;
+    border-radius: 0.3rem;
+    margin-top: 0.5rem;
+  }
+  &__box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 7.5rem 0;
+    z-index: 1;
+    width: 100%;
+  }
+  // &__head {
+  // }
+  &__title {
+    margin: 0 auto;
+    font-size: 5.125rem;
+
+    max-width: 640px;
+    line-height: 1.1;
+  }
+  &__subtitle {
+    margin: 0 auto;
+    font-size: 2.625rem;
+    max-width: 640px;
+    font-weight: 400;
+  }
+  &__paragraph {
+    font-size: 2.2rem;
+    padding: 2rem;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+  &__input {
+    position: relative;
+    border: 0;
+    border-bottom: 2px solid $color--yellow;
+    height: 60px;
+    // min-width: 450px;
+    outline: none;
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    color: $color--black;
+    font-size: 16px;
+    z-index: 1;
+
+    &::placeholder {
+      text-transform: capitalize;
+      font-size: 16px;
+    }
+
+    &-btn {
+      text-transform: capitalize;
+      font-size: 1.625rem;
+      cursor: pointer;
+      font-weight: 400;
+      padding: 0.5rem 0;
+      height: 60px;
+      // width: auto;
+    }
+  }
+  .chevron {
+    width: 1%;
+  }
+}
