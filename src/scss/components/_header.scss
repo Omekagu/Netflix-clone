@@ -1,19 +1,19 @@
 .header {
   background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.8) 0,
+      91deg,
+      rgba(0, 0, 0, 1) 0,
       transparent 60%,
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 1)
     ),
     url(../../../public/assets/netflixbg.jpg);
   background-size: cover;
   background-position: center;
-  height: 95vh;
-  border-bottom: 8px solid $color--dark;
+  height: 97vh;
+  border-bottom: $border--bottom;
   position: relative;
 
   &__nav {
-    @include displayFex(center, space-between, row);
+    @include displayFlex(center, space-between, row);
     padding: 2rem;
   }
   &__logo {
@@ -23,28 +23,30 @@
     line-height: normal;
   }
   &__signUp--link {
+    text-transform: capitalize;
     margin-left: auto;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: normal;
     padding: 0.7rem 1.7rem;
     border-radius: 0.3rem;
     margin-top: 0.5rem;
+    background: $color--primary;
   }
   &__box {
     position: absolute;
     text-align: center;
+    line-height: 4rem;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -39%);
     margin: 0 auto;
     max-width: 950px;
     padding: 7.5rem 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
   }
-  // &__head {
-  // }
+
   &__title {
     margin: 0 auto;
     font-size: 5.125rem;
@@ -64,12 +66,18 @@
     font-weight: 400;
     margin: 0 auto;
   }
+  .form {
+    text-align: center;
+  }
+  &__form {
+    @include displayFlex(center, null, row);
+    margin-left: 12.8rem;
+  }
   &__input {
-    position: relative;
     border: 0;
     border-bottom: 2px solid $color--yellow;
     height: 60px;
-    // min-width: 450px;
+    min-width: 491px;
     outline: none;
     padding: 1rem 1rem;
     border-radius: 2px;
@@ -81,18 +89,29 @@
       text-transform: capitalize;
       font-size: 16px;
     }
-
     &-btn {
       text-transform: capitalize;
-      font-size: 1.625rem;
+      font-size: 2.625rem;
       cursor: pointer;
       font-weight: 400;
-      padding: 0.5rem 0;
+      padding: 1rem 4rem;
       height: 60px;
-      // width: auto;
+      background-image: linear-gradient(
+        180deg,
+        $color--primary,
+        $color--primary--dark
+      );
+      box-shadow: 0 1px 0 rgb(0 0 0 / 45%);
+
+      &:hover {
+        background: $color--primary;
+      }
     }
   }
-  .chevron {
-    width: 1%;
+  &__chevron {
+    width: 1.5%;
+    fill: currentColor;
+    margin-left: -3rem;
+    font-size: 1.625rem;
   }
 }

@@ -1,0 +1,42 @@
+.story {
+  @include displayFlex(center, space-between, row);
+  background-image: $color--black;
+  padding: 7rem 4.5rem;
+  border-bottom: $border--bottom;
+
+  &__left--card {
+    flex: 0 1 auto;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 52%;
+  }
+  &__title {
+    @include title;
+  }
+  &__paragraph {
+    @include paragraph;
+  }
+
+  &__right--card {
+    overflow: hidden;
+    position: relative;
+  }
+  &__tv {
+    position: relative;
+    z-index: 2;
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    transform: translate(0.1rem, -0.7rem);
+  }
+  &__video {
+    height: 100%;
+    left: 50%;
+    max-height: 54%;
+    max-width: 74%;
+    position: absolute;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}

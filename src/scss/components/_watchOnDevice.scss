@@ -1,0 +1,21 @@
+.watchOnDevice {
+  display: flex;
+  background-image: $color--black;
+  padding: 7rem 4.5rem;
+  border-bottom: $border--bottom;
+
+  &__left--card {
+    flex: 0 1 auto;
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 52%;
+    text-align: left;
+    margin-left: 6rem;
+  }
+  &__title {
+    @include title;
+  }
+  &__paragraph {
+    @include paragraph;
+  }
+}

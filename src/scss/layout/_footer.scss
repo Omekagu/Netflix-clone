@@ -1,0 +1,22 @@
+.footer {
+  padding: 70px 45px;
+  &__head {
+    text-align: left;
+  }
+  &__list {
+    @include displayFlex(center, space-between, row);
+    list-style: none;
+    text-transform: capitalize;
+    color: $color--grey--light;
+    font-size: 1.3rem;
+    line-height: 4rem;
+    margin-top: 80px;
+    min-width: 190px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
+  &__buttom {
+    text-align: left;
+  }
+}

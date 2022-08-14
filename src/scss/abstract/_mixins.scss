@@ -1,6 +1,17 @@
-@mixin displayFex($align, $justify, $direction) {
+@mixin displayFlex($align, $justify, $direction) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
   flex-direction: $direction;
+}
+
+@mixin title {
+  font-size: 4.425rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+@mixin paragraph {
+  font-size: 3.25rem;
+  font-weight: 400;
 }

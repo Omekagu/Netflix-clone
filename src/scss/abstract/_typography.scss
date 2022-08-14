@@ -1,6 +1,16 @@
-.big--text {
+// .big--text {
+// }
+// .medium--text {
+// }
+// .small--text {
+// }
+.text--0 {
+  color: $color--light;
+  font-size: 2rem;
+  font-weight: 600;
 }
-.medium--text {
-}
-.small--text {
+.text--1 {
+  color: $color--blue;
+  font-size: 2rem;
+  font-weight: 400;
 }

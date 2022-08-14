@@ -1,0 +1,38 @@
+.faq {
+  @include displayFlex(center, null, column);
+  text-align: center;
+  background-image: $color--black;
+  padding: 7rem 4.5rem;
+  border-bottom: $border--bottom;
+
+  &__title {
+    @include title;
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    @include displayFlex(center, space-between, row);
+    text-transform: capitalize;
+    list-style: none;
+    background: $color--grey--dark;
+    font-size: 2.625rem;
+    font-weight: 400;
+    margin: 0 0 8px;
+    border: 0;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    position: relative;
+    width: 100%;
+  }
+}
+.list--text {
+  text-align: start;
+  width: 70%;
+}
+.plus--svg {
+  width: 10%;
+  fill: $color--light;
+  margin: 0 2rem;
+  transform: translateX(17rem) rotate(-45deg);
+}

@@ -1,10 +1,11 @@
 $color--primary: #e50914;
+$color--primary--dark: #b91921;
 $color--dark: #222;
 $color--black: #000;
+$color--grey: hsla(0, 0%, 100%, 0.25);
+$color--grey--dark: #303030;
+$color--grey--light: #737373;
+$color--blue: #0071eb;
 $color--light: #fff;
 $color--yellow: #ffa00a;
-// $color--primary: ;
-// $color--primary: ;
-// $color--primary: ;
-// $color--primary: ;
-// $color--primary: ;
+$border--bottom: 8px solid $color--dark;

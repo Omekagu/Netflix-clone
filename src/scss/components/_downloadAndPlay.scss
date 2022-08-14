@@ -1,0 +1,47 @@
+.download {
+  @include displayFlex(center, space-between, row);
+  background-image: $color--black;
+  padding: 7rem 4.5rem;
+  border-bottom: $border--bottom;
+  &__left--card,
+  &__right--card {
+    position: relative;
+    width: 49%;
+  }
+  &__phone {
+    width: 90%;
+  }
+  &__animation {
+    @include displayFlex(center, space-between, row);
+    background: $color--black;
+    border: 2px solid $color--grey;
+    border-radius: 0.75em;
+    bottom: 8%;
+    box-shadow: 0 0 2em 0 $color--black;
+
+    left: 50%;
+    margin: 0 auto;
+    padding: 0.95em 0.65em;
+    position: absolute;
+    transform: translateX(-60%);
+    width: 60%;
+  }
+  &__picture {
+    height: 10.5vh;
+    margin-right: 2rem;
+  }
+  &__text {
+    margin-right: auto;
+    text-transform: capitalize;
+  }
+
+  &__loader {
+    height: 5.75em;
+  }
+  &__title {
+    @include title;
+  }
+  &__paragraph {
+    @include paragraph;
+  }
+}
