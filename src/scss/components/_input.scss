@@ -1,7 +1,30 @@
 .input {
   background-color: $color--light;
+
+  &:focus {
+    border-bottom: 4px solid $color--green;
+  }
+  &:focus:invalid {
+    border-bottom: 4px solid $color--primary;
+  }
 }
+
 .faq--input {
   @include displayFlex(center, null, row);
   margin-left: 27rem;
+  width: 60%;
+
+  @media only screen and (max-width: $bp--large) {
+    @include displayFlex(center, null, column);
+    margin-left: 15rem;
+  }
+}
+.header__form {
+  @include displayFlex(center, null, row);
+  margin-left: 9.8rem;
+  width: 80%;
+  @media only screen and (max-width: $bp--large) {
+    @include displayFlex(center, null, column);
+    margin-left: 8.9rem;
+  }
 }

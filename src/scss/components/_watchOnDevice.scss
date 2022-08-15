@@ -11,6 +11,12 @@
     width: 52%;
     text-align: left;
     margin-left: 6rem;
+
+    // MEDIA
+    @media only screen and (max-width: $bp--large) {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__title {
     @include title;

@@ -29,6 +29,9 @@ const Footer = () => {
           <li>Terms of Use </li>
           <li>Contact Us</li>
           <li>Seed test</li>
+          <li >
+            created by <span className="designer">OMEKAGU CHUKWUEBUKA JOSEPH</span>
+          </li>
         </div>
       </ul>
     </section>

@@ -15,8 +15,35 @@
     padding-bottom: 20px;
     position: relative;
     width: 100%;
+
+    @media only screen and (max-width: $bp--smallest) {
+      @include displayFlex(center, space-between, column);
+    }
   }
   &__buttom {
     text-align: left;
+  }
+}
+.designer {
+  font-size: large;
+  font-style: italic;
+  color: $color--yellow;
+  animation: Colorchanger 10s ease;
+}
+@keyframes Colorchanger {
+  0% {
+    color: $color--yellow;
+  }
+  30% {
+    color: $color--primary;
+  }
+  50% {
+    color: $color--blue;
+  }
+  70% {
+    color: $color--grey;
+  }
+  100% {
+    color: $color--primary--dark;
   }
 }

@@ -7,7 +7,7 @@ const Header = () => {
     <header className="header">
       <nav className="header__nav">
         <LogoSvg />
-        <span className="header__signUp--link btn">sign in</span>
+        <span className="header__signUp--link ">sign in</span>
       </nav>
 
       <div className="header__box">

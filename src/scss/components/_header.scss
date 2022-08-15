@@ -41,7 +41,7 @@
     left: 50%;
     transform: translate(-50%, -39%);
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 750px;
     padding: 7.5rem 0;
     z-index: 2;
     width: 100%;
@@ -49,9 +49,8 @@
 
   &__title {
     margin: 0 auto;
-    font-size: 5.125rem;
-
-    max-width: 640px;
+    font-size: 5.025rem;
+    max-width: 540px;
     line-height: 1.1;
   }
   &__subtitle {
@@ -75,15 +74,21 @@
   }
   &__input {
     border: 0;
-    border-bottom: 2px solid $color--yellow;
     height: 60px;
-    min-width: 491px;
     outline: none;
+    min-width: 491px;
     padding: 1rem 1rem;
     border-radius: 2px;
     color: $color--black;
     font-size: 16px;
     z-index: 1;
+
+    @media only screen and (max-width: $bp--small) {
+      min-width: 359px;
+    }
+    @media only screen and (max-width: $bp--smallest) {
+      min-width: 259px;
+    }
 
     &::placeholder {
       text-transform: capitalize;
@@ -91,10 +96,9 @@
     }
     &-btn {
       text-transform: capitalize;
-      font-size: 2.625rem;
+      font-size: inherit;
       cursor: pointer;
       font-weight: 400;
-      padding: 1rem 4rem;
       height: 60px;
       background-image: linear-gradient(
         180deg,
@@ -109,9 +113,9 @@
     }
   }
   &__chevron {
-    width: 1.5%;
+    width: 4%;
     fill: currentColor;
-    margin-left: -3rem;
+    margin-left: 2rem;
     font-size: 1.625rem;
   }
 }

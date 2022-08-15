@@ -5,13 +5,16 @@
   padding: 7rem 4.5rem;
   border-bottom: $border--bottom;
 
+  @media only screen and (max-width: $bp--small) {
+    padding: 7rem 0rem;
+  }
+
   &__title {
     @include title;
     margin-bottom: 3rem;
   }
 
   &__list {
-    @include displayFlex(center, space-between, row);
     text-transform: capitalize;
     list-style: none;
     background: $color--grey--dark;
@@ -27,12 +30,20 @@
   }
 }
 .list--text {
-  text-align: start;
-  width: 70%;
+  text-align: left;
+  width: 100%;
+  margin-right: 40rem;
+
+  @media only screen and (max-width: $bp--smallest) {
+    margin-right: 30rem;
+  }
 }
 .plus--svg {
-  width: 10%;
-  fill: $color--light;
-  margin: 0 2rem;
-  transform: translateX(17rem) rotate(-45deg);
+  fill: #fff;
+  height: 1em;
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 1em;
 }
