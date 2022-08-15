@@ -32,7 +32,6 @@ html {
     font-size: 7px;
   }
 }
-
 body {
   color: #fff;
   background-color: #000;
@@ -127,9 +126,9 @@ body {
     min-width: 359px;
   }
 }
-@media only screen and (max-width: 29.7em) {
+@media only screen and (max-width: 18.93em) {
   .header__input {
-    min-width: 259px;
+    min-width: 100px;
   }
 }
 .header__input::-moz-placeholder {
@@ -208,6 +207,11 @@ body {
     margin-left: 15rem;
   }
 }
+@media only screen and (max-width: 18.93em) {
+  .faq--input {
+    transform: translateX(-3rem);
+  }
+}
 
 .header__form {
   display: flex;
@@ -222,6 +226,11 @@ body {
     align-items: center;
     flex-direction: column;
     margin-left: 8.9rem;
+  }
+}
+@media only screen and (max-width: 18.93em) {
+  .header__form {
+    margin-left: 4rem;
   }
 }
 
@@ -342,6 +351,12 @@ body {
     transform: translateX(-50%);
   }
 }
+@media only screen and (max-width: 18.93em) {
+  .download__animation {
+    transform: translateX(-51%);
+    width: 100%;
+  }
+}
 .download__picture {
   height: 10.5vh;
   margin-right: 2rem;
@@ -445,7 +460,7 @@ body {
   width: 100%;
   margin-right: 40rem;
 }
-@media only screen and (max-width: 29.7em) {
+@media only screen and (max-width: 28.07em) {
   .list--text {
     margin-right: 30rem;
   }
@@ -483,7 +498,7 @@ body {
   position: relative;
   width: 100%;
 }
-@media only screen and (max-width: 29.7em) {
+@media only screen and (max-width: 28.07em) {
   .footer__list {
     display: flex;
     align-items: center;

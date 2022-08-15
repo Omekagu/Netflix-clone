@@ -87,7 +87,11 @@
       min-width: 359px;
     }
     @media only screen and (max-width: $bp--smallest) {
-      min-width: 259px;
+    }
+
+    @media only screen and (max-width: $bp--vsmall) {
+      min-width: 100px;
+      // padding: 7rem 0rem;
     }
 
     &::placeholder {

@@ -15,4 +15,9 @@ $border--bottom: 8px solid $color--dark;
 $bp--large: 73.56em; //1177px
 $bp--medium: 45.7em; //729px
 $bp--small: 37.75em; //604px
-$bp--smallest: 29.7em; //475px
+$bp--smallest: 28.07em; //475px
+$bp--vsmall: 18.93em; //345px
+
+//  @media only screen and (max-width: $bp--vsmallest) {
+//     padding: 7rem 0rem;
+//   }

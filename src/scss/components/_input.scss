@@ -18,6 +18,10 @@
     @include displayFlex(center, null, column);
     margin-left: 15rem;
   }
+
+  @media only screen and (max-width: $bp--vsmall) {
+    transform: translateX(-3rem);
+  }
 }
 .header__form {
   @include displayFlex(center, null, row);
@@ -26,5 +30,8 @@
   @media only screen and (max-width: $bp--large) {
     @include displayFlex(center, null, column);
     margin-left: 8.9rem;
+  }
+  @media only screen and (max-width: $bp--vsmall) {
+    margin-left: 4rem;
   }
 }
